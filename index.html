@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Chess Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS Reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("img/bg1.jpg");
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 20%;
+            
+        }
+
+        .left img {
+            width: 40px;
+            float: left;
+            margin: 9px auto;
+        }
+
+        .left div {
+            margin: 15px auto;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .mid {
+            display: block;
+            width: 35%;
+            margin: 20px auto;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .right {
+            position: absolute;
+            display: inline-block;
+            right: 0px;
+            top: 20px;
+        }
+
+        .btn {
+            background: black;
+            color: white;
+            padding: 16px 18px;
+            font-size: 18px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        .btn:hover,
+        .btn.active {
+            background: rgb(83, 83, 83);
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .container {
+            margin: 54px 82px;
+            padding: 37px 24px;
+            border: 2px solid white;
+            border-radius: 12px;
+            width: 32%;
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .form-group input {
+            text-align: center;
+            margin: 10px auto;
+            padding: 7px 51px;
+            border-radius: 10px;
+            display: block;
+            width: 250px;
+            font-size: 18px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .container .btn{
+            display: block;
+            margin: 2px auto;
+            width: 350px;
+            padding: 9px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <img src="img/images.jpg" alt="">
+            <div>
+                Gaurav Chess Club
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Achievment</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Contact US</button>
+            <button class="btn">Blog</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join Our Chess Club</h1>
+        <form action="noaction.js">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Chess Level">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Email ID">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Location">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
